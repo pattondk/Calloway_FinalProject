@@ -8,6 +8,7 @@ Brief Description: Decrypted a file and found our location presented a picture
 Citations: 
 Anything else that's relevant: This was a group project and it was fun! :)
 '''
+
 from PIL import Image # This will allow us to use pillow 
 
 #This reads the text file
@@ -48,4 +49,6 @@ def show_picture(filename):
      
     
     return out
+    
+englishIndex('english.txt')
 
