@@ -8,6 +8,9 @@ Brief Description: Decrypted a file and found our location presented a picture
 Citations: 
 Anything else that's relevant: This was a group project and it was fun! :)
 '''
+
+from PIL import Image # This will allow us to use pillow 
+
 #This reads the text file
 with open('english.txt') as f:
     lines = f.readlines()
@@ -36,3 +39,16 @@ def englishIndex(fileName):
 print(englishIndex('english.txt'))
 
 englishIndex('english.txt')
+
+def show_picture(filename):
+    
+    Neilpicture = Image.open(filename)
+    angle = 90
+    out = Neilpicture.rotate(angle)
+    out.load()
+     
+    
+    return out
+    
+englishIndex('english.txt')
+

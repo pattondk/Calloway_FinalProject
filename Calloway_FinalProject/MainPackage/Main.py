@@ -10,8 +10,15 @@ Anything else that's relevant: This was a group project and it was fun! :)
 '''
 
 from DecryptionPackage.Decryption import *
+from PIL import Image
 
 print(englishIndex)
 
+Neil = Image.open("Neil.jpg")
+Neil.show()
+=======
 
+from DecryptionPackage.Decryption import *
+
+print(englishIndex)
 
