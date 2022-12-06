@@ -1,6 +1,6 @@
 '''
-Name: David Patton and Josh Earley
-email: pattondk@mail.uc.edu, earleyja@mail.uc.edu, 
+Name: David Patton, Josh Earley, Matt Lamb, Aria Nielsen, Maxwell Ehrlich 
+email: pattondk@mail.uc.edu, earleyja@mail.uc.edu, lambmj@mail.uc.edu, nielseai@mail.uc.edu, ehrlicmh@mail.uc.edu
 Assignment: Calloway_FinalProject
 Course: IS 4010
 Semester/Year: Fall 2022
