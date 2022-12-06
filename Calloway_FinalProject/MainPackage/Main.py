@@ -16,7 +16,6 @@ print(englishIndex)
 
 Neil = Image.open("Neil.jpg")
 Neil.show()
-=======
 
 from DecryptionPackage.Decryption import *
 
