@@ -46,9 +46,7 @@ def show_picture(filename):
     angle = 90
     out = Neilpicture.rotate(angle)
     out.load()
-     
-    
+   
     return out
-    
-englishIndex('english.txt')
+  
 
