@@ -1,5 +1,5 @@
 '''
-Name: David Patton, Josh Earley, Matt Lamb, Aria Nielsen, Maxwell Ehrlich 
+Name: David Patton and Josh Earley
 email: pattondk@mail.uc.edu, earleyja@mail.uc.edu, lambmj@mail.uc.edu, nielseai@mail.uc.edu, ehrlicmh@mail.uc.edu
 Assignment: Calloway_FinalProject
 Course: IS 4010
@@ -8,13 +8,14 @@ Brief Description: Decrypted a file and found our location presented a picture
 Citations: 
 Anything else that's relevant: This was a group project and it was fun! :)
 '''
-
 from PIL import Image # This will allow us to use pillow 
+import json
 
 #This reads the text file
 with open('english.txt') as f:
     lines = f.readlines()
-
+with open('EncryptedGroupHints.json') as g:
+    lines = g.readlines()
 #This function turns the text file into a dictionary that is indexed    
 def englishIndex(fileName):
     d = {}
@@ -36,9 +37,9 @@ def englishIndex(fileName):
 
         return result
 
-print(englishIndex('english.txt'))
+#print(englishIndex('english.txt'))
 
-englishIndex('english.txt')
+#englishIndex('english.txt')
 
 def show_picture(filename):
     
@@ -46,7 +47,15 @@ def show_picture(filename):
     angle = 90
     out = Neilpicture.rotate(angle)
     out.load()
-   
+     
+    
     return out
-  
 
+
+def jsonIndex(filename: str):
+    with open(filename) as f_in:
+        return json.load(f_in)
+
+if __name__ == "__main__":
+    my_data = jsonIndex('EncryptedGroupHints.json')
+    print(my_data)
